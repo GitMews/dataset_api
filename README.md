@@ -7,7 +7,7 @@ This project uses a movie database as an example use case, but the goal is gener
 ---
 
 ## Context
-The MySQL database contains a single table of movies from a , with basic metadata :
+The MySQL database contains a single table of movies, with basic metadata :
 <img width="550" height="330" alt="image" src="https://github.com/user-attachments/assets/47a284a3-c383-4a08-a166-7a25c880e1e1" />
 
 The aim of this project is to expose these data accross two endpoints :
