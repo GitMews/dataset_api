@@ -4,3 +4,6 @@ env/
 # Python basics
 __pycache__/
 *.pyc
+
+# Database access
+database.conf
