@@ -3,3 +3,6 @@ host =
 user = 
 password = 
 name = 
+
+[api]
+key = cle

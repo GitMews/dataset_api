@@ -1,5 +1,6 @@
-from fastapi import APIRouter
-from app.database import get_films
+from fastapi import APIRouter, HTTPException, Depends
+from app.database import get_films, get_film_data
+from app.security import check_api_key
 
 # Initilize router
 router = APIRouter()
@@ -10,15 +11,12 @@ def ping():
     return {"status": "ok"}
 
 # /getFilms
-@router.get("/getFilms")
+@router.get("/getFilms", dependencies=[Depends(check_api_key)])
 def get_films_endpoint():
     return get_films()
 
 # /getFilmData
-from fastapi import HTTPException
-from app.database import get_film_data
-
-@router.get("/getFilmData")
+@router.get("/getFilmData", dependencies=[Depends(check_api_key)])
 def get_film_data_endpoint(id: int):
     film = get_film_data(id)
 

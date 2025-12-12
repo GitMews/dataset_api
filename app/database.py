@@ -3,7 +3,7 @@ import pymysql
 from pathlib import Path
 
 # Get conf file
-CONFIG_FILE = Path("database.conf")
+CONFIG_FILE = Path("config.ini")
 
 def load_database_config():
     config = configparser.ConfigParser()
