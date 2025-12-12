@@ -6,4 +6,4 @@ __pycache__/
 *.pyc
 
 # Database access
-database.conf
+config.ini
