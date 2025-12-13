@@ -47,7 +47,7 @@ pip install -r requirements.txt
 ```
 
 When it's done, you have to setup the config.ini file :
-- Remove the .empty in the name of the file
+- Rename `config.ini.empty` to `config.ini`
 - Fill the file with your own database credentials
 
 Finally, you can test your API with the following :
