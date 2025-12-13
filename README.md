@@ -24,11 +24,11 @@ Endpoints are accessible only if the request contains a valid API key :
 ---
 
 ## App description
-* main.py - entry point
-* endpoints.py - HTTP endpoints (FastAPI)
-* database.py - MySQL database access
-* security.py - Api KEY verification
-* config.ini - runtime configuration
+* `main.py` - entry point
+* `endpoints.py` - HTTP endpoints (FastAPI)
+* `database.py` - MySQL database access
+* `security.py` - Api KEY verification
+* `config.ini` - runtime configuration
 
 ---
 
