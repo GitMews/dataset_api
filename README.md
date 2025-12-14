@@ -39,7 +39,7 @@ If you want to deploy and use the app, you will need a MySQL database with a tab
 Additional columns are optional and will be automatically exposed by the API.
 
 To deploy the app, clone the repository using git clone command, then setup a virtual environnement with the following ones :
-```
+```bash
 python3 -m venv env
 source env/bin/activate # if needed
 pip install --upgrade pip
@@ -51,10 +51,10 @@ When it's done, you have to setup the config.ini file :
 - Fill the file with your own database credentials
 
 Finally, you can test your API with the following :
-```
+```bash
 uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
-You can now call your API, try with http://0.0.0.0:8000/ping in your browser, it should return {"status" : "ok"}.
+You can now call your API, try with `http://0.0.0.0:8000/ping` in your browser, it should return {"status" : "ok"}.
 If you want to call the other endpoints, do not forget to put as a header for your request the API KEY.
 
 You can use a browser extension like Header Editor for the purpose if needed :
